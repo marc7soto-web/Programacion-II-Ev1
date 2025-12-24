@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Marcelosoto EV1</string>
+    <string name="logo_restaurante">Logo del restaurante</string>
+    <string name="cantidad_pastel">Cantidad Pastel de Choclo</string>
+    <string name="subtotal_pastel">Subtotal Pastel</string>
+    <string name="imagen_pastel">Imagen del Pastel de Choclo</string>
+    <string name="cantidad_cazuela">Cantidad Cazuela</string>
+    <string name="subtotal_cazuela">Subtotal Cazuela</string>
+    <string name="imagen_cazuela">Imagen de la Cazuela</string>
+    <string name="agregar_propina">¿Agregar propina?</string>
+    <string name="comida_total">Comida: $0</string>
+    <string name="propina_total">Propina: $0</string>
+    <string name="total_final">TOTAL: $0</string>
+</resources>
