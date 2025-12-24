@@ -11,4 +11,5 @@
     <string name="comida_total">Comida: $0</string>
     <string name="propina_total">Propina: $0</string>
     <string name="total_final">TOTAL: $0</string>
+    <string name="titulo_pedidos">PEDIDOS RESTAURANT</string>
 </resources>
