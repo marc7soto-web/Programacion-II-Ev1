@@ -17,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:contentDescription="@string/logo_restaurante"/>
 
-    <!-- Título debajo del logo -->
+    <!-- Título de la aplicacion -->
     <TextView
         android:id="@+id/tvTitulo"
         android:layout_width="wrap_content"
@@ -33,9 +33,6 @@
         android:layout_marginBottom="20dp"/>
 
     <!-- Campo para ingresar cantidad de Pastel de Choclo -->
-
-    <!-- Subtotal del Pastel -->
-
     <EditText
         android:id="@+id/edtPastelCantidad"
         android:layout_width="wrap_content"
@@ -47,9 +44,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTitulo" />
 
-    <!-- Imagen del Pastel -->
-
-    <!-- Campo para ingresar cantidad de Cazuela -->
+    <!-- Subtotal del Pastel -->
     <TextView
         android:id="@+id/txtPastelSubtotal"
         android:layout_width="wrap_content"
@@ -59,6 +54,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edtPastelCantidad" />
 
+    <!-- Imagen del Pastel -->
     <ImageView
         android:id="@+id/imgPastel"
         android:layout_width="100dp"
@@ -69,7 +65,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtPastelSubtotal" />
 
-    <!-- Subtotal de la Cazuela -->
+    <!-- Campo para ingresar cantidad de Cazuela -->
     <EditText
         android:id="@+id/edtCazuelaCantidad"
         android:layout_width="wrap_content"
@@ -80,9 +76,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imgPastel" />
 
-    <!-- Imagen de la Cazuela -->
-
-    <!-- Switch para activar o desactivar propina -->
+    <!-- Subtotal de la Cazuela -->
     <TextView
         android:id="@+id/txtCazuelaSubtotal"
         android:layout_width="wrap_content"
@@ -92,6 +86,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edtCazuelaCantidad" />
 
+    <!-- Imagen de la Cazuela -->
     <ImageView
         android:id="@+id/imgCazuela"
         android:layout_width="100dp"
@@ -102,8 +97,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtCazuelaSubtotal" />
 
-    <!-- Total de comida sin propina -->
-
+    <!-- Switch para activar o desactivar propina -->
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switchPropina"
         android:layout_width="wrap_content"
@@ -114,9 +108,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imgCazuela" />
 
-    <!-- Monto de la propina -->
-
-    <!-- Total final con propina -->
+    <!-- Total de comida sin propina -->
     <TextView
         android:id="@+id/txtTotalComida"
         android:layout_width="wrap_content"
@@ -128,6 +120,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/switchPropina" />
 
+    <!-- Monto de la propina -->
     <TextView
         android:id="@+id/txtPropinaMonto"
         android:layout_width="wrap_content"
@@ -137,6 +130,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtTotalComida" />
 
+    <!-- Total final con propina -->
     <TextView
         android:id="@+id/txtTotalFinal"
         android:layout_width="wrap_content"
@@ -148,5 +142,16 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtPropinaMonto" />
+
+    <!-- Boton para Salir de la aplicacion -->
+    <Button
+        android:id="@+id/btn_salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

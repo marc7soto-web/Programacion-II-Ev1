@@ -42,6 +42,13 @@ class MainActivity : AppCompatActivity() {
         val edtCazuela = findViewById<EditText>(R.id.edtCazuelaCantidad)
         val switchPropina = findViewById<SwitchCompat>(R.id.switchPropina)
 
+        // Boton Salir
+        val btnSalir = findViewById<Button>(R.id.btn_salir)
+        btnSalir.setOnClickListener {
+            moveTaskToBack(true)
+            android.os.Process.killProcess(android.os.Process.myPid())
+        }
+
         // Listener para cambios en la cantidad de Pastel.
         edtPastel.addTextChangedListener(simpleWatcher {
             cuenta.actualizarCantidad("Pastel de Choclo", it.toIntOrNull() ?: 0)
